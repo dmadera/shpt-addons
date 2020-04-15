@@ -1,0 +1,25 @@
+{
+    "name": "shoptet-addons",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack --mode production --watch",
+        "transfer_savana": "winscp /command \"open scp://${savana-host}/ -privatekey=${PRIVATE_KEY}\" \"synchronize remote .\\dist /www/velkoobchoddrogerie.cz/temp/extensions\" exit",
+        "transfer": "winscp /command \"open sftp://${shoptetuser}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
+        "watch-dev": "watch \"npm run transfer\" .\\dist -d -u",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "css-loader": "^3.5.2",
+        "sass": "^1.26.3",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.1.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11"
+    }
+}

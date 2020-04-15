@@ -1,0 +1,55 @@
+.msg-success {
+    display: none !important;
+}
+
+.products {
+    .btn.add-to-cart-button {
+        width: 110px;
+    }
+
+    .in-cart-info {
+        display: block;
+        text-align: center;
+        color: #009901;
+        margin: -10px;
+        margin-top: 20px;
+        border-bottom: 3px solid #009901;
+        font-size: 16px;
+    }
+
+    .added-to-cart {
+        border-color: #009901 !important;
+        background-color: #009901 !important;
+        &::before {
+            content: "\2713" !important;
+            font-size: 26px !important;
+            margin-top: -6px !important;
+            margin-right: 8px !important;
+        }
+    }
+
+    .addons.quantity {
+        border-radius: 0px;
+        margin-bottom: 0px;
+
+        input {
+            width: 77.953px;
+            height: 36px;
+        }
+
+        .increase {
+            height: 18px;
+            &::before {
+                line-height: 18px;
+            }
+        }
+
+        .decrease {
+            height: 18px;
+            top: 18px;
+            &::before {
+                line-height: 18px;
+            }
+        }
+    }
+}

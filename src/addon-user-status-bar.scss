@@ -1,0 +1,47 @@
+@media (max-width: 1024px) {
+    #header .addon {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .top-navigation-bar {
+        display: none;
+    }
+
+    .menu-helper {
+        top: 109px;
+    }
+
+    #header .addon.top-navigation-contacts {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #header .addon.top-navigation-contacts a,
+    #header .addon a {
+        color: grey !important;
+        background-color: #ffffff !important;
+
+        &:hover {
+            color: #963400;
+        }
+    }
+
+    #header .navigation-buttons .addon {
+        margin-bottom: 20px;
+    }
+
+    #header .navigation-buttons .addon .separator {
+        margin: 0 10px;
+    }
+
+    .header-top .site-name {
+        padding: 10px 20px 0 0;
+    }
+
+    .header-top {
+        height: auto;
+    }
+}

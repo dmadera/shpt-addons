@@ -1,0 +1,114 @@
+.msg-success {
+    display: none !important;
+}
+
+.p-tools {
+    display: none;
+}
+
+.products {
+    .addon.add-to-cart-enhanced {
+        width: 100%;
+        clear: both;
+        margin-top: 10px;
+
+        .cart-inc-dec-buttons-wrapper {
+            width: fit-content;
+            float: right;
+        }
+
+        .cart-add-button,
+        .cart-update-button,
+        .cart-increase-button,
+        .cart-decrease-button {
+            float: right;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #b9927d;
+            background-color: #fff;
+            font-size: 16px;
+            height: 2.5em;
+            width: 2.5em;
+            position: relative;
+            color: #963400;
+
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                background-color: #963400;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .cart-decrease-button {
+            &:after {
+                height: 0.2em;
+                width: 1em;
+            }
+            margin-right: 5px;
+        }
+        .cart-increase-button {
+            &:before {
+                height: 1em;
+                width: 0.2em;
+            }
+            &:after {
+                height: 0.2em;
+                width: 1em;
+            }
+        }
+        .cart-add-button,
+        .cart-update-button {
+            width: fit-content;
+            padding: 0 20px 0 20px;
+            background-color: #963400;
+            color: white;
+        }
+        .cart-amount {
+            display: block;
+            float: right;
+            margin: 0;
+            padding-left: 10px;
+            font-size: 14px;
+            width: 80px;
+            height: 40px;
+            -webkit-appearance: initial;
+            border: 1px solid grey;
+            background-image: none;
+            background-color: transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            margin-right: 9px;
+        }
+    }
+
+    .in-cart-info {
+        display: block;
+        text-align: center;
+        color: #009901;
+        margin: -10px;
+        margin-top: 20px;
+        border-bottom: 3px solid #009901;
+        font-size: 16px;
+
+        span {
+            margin-right: 4px;
+        }
+    }
+
+    .added-to-cart {
+        border-color: #009901 !important;
+        background-color: #009901 !important;
+        &::before {
+            content: "\2713" !important;
+            font-size: 26px !important;
+            margin-top: -6px !important;
+            margin-right: 8px !important;
+        }
+    }
+}

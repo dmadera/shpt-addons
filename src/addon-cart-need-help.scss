@@ -1,0 +1,12 @@
+.addon.need-help {
+    .project-email::before {
+        content: "\e924";
+    }
+    .project-phone::before {
+        content: "\e924";
+    }
+}
+
+.checkout-box:not(.addon) {
+    display: none;
+}

@@ -1,0 +1,20 @@
+.clearfix {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.products .product img {
+    padding: 10%;
+}
+
+.p-detail .p-image .p-main-image,
+.mouse-trap {
+    margin: 5%;
+}
+
+.cart-table .cart-p-image img {
+    padding: 8px;
+}
