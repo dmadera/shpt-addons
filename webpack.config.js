@@ -3,7 +3,7 @@ const path = require("path")
 
 module.exports = {
     entry: {
-        addonsEshopPapiremCz: "./src/addons-eshop-papirem-cz.js",
+        addonsAll: "./src/addons-all.js",
     },
     output: {
         filename: "[name].js",

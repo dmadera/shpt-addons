@@ -1,4 +1,4 @@
-import "./addons-eshop-papirem-cz.scss"
+import "./addons-all.scss"
 import data from './datalayer'
 window.addonsData = data
 
