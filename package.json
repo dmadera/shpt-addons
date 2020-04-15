@@ -6,8 +6,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "webpack --mode production --watch",
-        "transfer_savana": "winscp /command \"open scp://${savana-host}/ -privatekey=${PRIVATE_KEY}\" \"synchronize remote .\\dist /www/velkoobchoddrogerie.cz/temp/extensions\" exit",
-        "transfer": "winscp /command \"open sftp://${shoptetuser}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
+        "deploy_pema": "winscp /command \"open sftp://${shoptetuserpema}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
+        "deploy_lipa": "winscp /command \"open sftp://${shoptetuserlipa}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
+        "deploy_test": "winscp /command \"open sftp://${shoptetuserpema}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
+        "deploy": "npm run deploy_pema && npm run deploy_lipa",
         "watch-dev": "watch \"npm run transfer\" .\\dist -d -u",
         "build": "webpack --mode production"
     },

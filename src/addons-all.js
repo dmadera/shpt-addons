@@ -3,7 +3,8 @@ import data from './datalayer'
 window.addonsData = data
 
 $(document).ready(function () {
-    // console.log(data)
+    console.log('Document ready event callback.')
+    console.log("Turn off cache for debug: shoptet.cookie.create('debugTimestamp', 1, {days: 3})");
     //shoptet.dev.enableEventsMonitoring()
 
 })
