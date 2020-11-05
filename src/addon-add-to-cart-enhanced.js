@@ -48,7 +48,7 @@ function addElements(container) {
             .append(buttonIncDecWrapper)
         wrapper.append(buttonsWrapper)
         productDiv.find('.p-bottom').append(wrapper)
-        productDiv.append($('<span class="in-cart-info">').append($('<span>')).append('ks v košíku'))
+        productDiv.find('.p').append($('<span class="in-cart-info">').append($('<span>')).append('ks v košíku'))
 
         let quantity = productDiv.attr('data-cart-quantity')
         productDiv.find('.cart-amount').val(quantity == 0 ? 1 : quantity)

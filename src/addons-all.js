@@ -11,6 +11,6 @@ $(document).ready(function () {
 
 require("./addon-user-status-bar.js")
 require("./addon-cart-need-help.js")
-require("./addon-add-to-cart.js")
-// require("./addon-add-to-cart-enhanced.js")
+// require("./addon-add-to-cart.js")
+require("./addon-add-to-cart-enhanced.js")
 require("./addon-disable-shoptet-logo.js")

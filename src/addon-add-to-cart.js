@@ -12,7 +12,7 @@ function updateProducts() {
     `)
 
     $(".product").removeClass("in-cart")
-    $(".product .in-cart-info").remove()
+    $(".product > .p .in-cart-info").remove()
     $(".product").attr("data-quantity", "0")
 
     var cart = dataLayer[0].shoptet.cart
@@ -20,9 +20,9 @@ function updateProducts() {
         var product_div = container.find(
             '.product .p-code > span:contains("' + product.code + '")'
         ).closest(".product")
-        product_div.addClass("in-cart")
+        product_div.find('.p').addClass("in-cart")
         product_div.attr("data-quantity", product.quantity)
-        product_div.append(
+        product_div.find('.p').append(
             '<span class="in-cart-info">' +
             product.quantity +
             " ks v košíku</span>"

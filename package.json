@@ -6,9 +6,6 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "webpack --mode production --watch",
-        "deploy_pema": "winscp /command \"open sftp://${shoptetuserpema}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
-        "deploy_lipa": "winscp /command \"open sftp://${shoptetuserlipa}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
-        "deploy_test": "winscp /command \"open sftp://${shoptetuserpema}:${shoptetpass}@ftp.myshoptet.com/ \" \"synchronize remote .\\dist /addons\" exit",
         "deploy": "npm run deploy_pema && npm run deploy_lipa",
         "watch-dev": "watch \"npm run transfer\" .\\dist -d -u",
         "build": "webpack --mode production"
@@ -22,6 +19,7 @@
         "sass-loader": "^8.0.2",
         "style-loader": "^1.1.3",
         "webpack": "^4.42.1",
-        "webpack-cli": "^3.3.11"
+        "webpack-cli": "^3.3.11",
+        "webpack-shell-plugin": "^0.5.0"
     }
 }
